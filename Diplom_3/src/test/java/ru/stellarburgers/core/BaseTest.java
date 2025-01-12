@@ -31,7 +31,8 @@ public class BaseTest {
         String browser = System.getProperty("browser", "chrome");
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://stellarburgers.nomoreparties.site";
-        Configuration.timeout = 5000;
+        Configuration.timeout = 10000;
+
 
         switch (browser.toLowerCase()) {
             case "chrome":

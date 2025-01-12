@@ -17,7 +17,7 @@ public class LoginPage {
 
 
     public void enterEmail(String email) {
-        emailInput.shouldBe(Condition.visible).setValue(email);
+        emailInput.shouldBe(Condition.visible).shouldBe(Condition.enabled).setValue(email);
     }
 
 

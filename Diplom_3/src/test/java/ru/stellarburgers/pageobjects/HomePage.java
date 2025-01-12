@@ -18,7 +18,7 @@ public class HomePage {
 
     @Step("Нажать на кнопку 'Войти в аккаунт'")
     public LoginPage signInButtonClick() {
-        loginButton.click();
+        loginButton.shouldBe(Condition.visible).click();
         return page(LoginPage.class);
     }
 
